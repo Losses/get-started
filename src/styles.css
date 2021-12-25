@@ -1,0 +1,129 @@
+document,
+body {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "IBM Plex Sans";
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: url("./images/background.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+a:link,
+a:visited {
+  color: white;
+}
+
+.main {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 64px 24px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.title {
+  font-size: 44px;
+  text-shadow: 0 0 8px #011126;
+  font-weight: 900;
+}
+
+.tile_group_title {
+  padding: 32px 0 16px 0;
+  font-size: 1em;
+  text-shadow: 0 0 4px #011126;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  gap: 12px;
+}
+
+.tile-container {
+  line-height: 0;
+}
+
+.tile,
+ax-reveal,
+ax-acrylic,
+ax-pressure,
+ax-elevation {
+  width: 120px;
+  height: 120px;
+}
+
+.tile {
+  display: block;
+  line-height: 0;
+}
+
+.tile-icon {
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  transform: translate(-50%, -50%);
+  filter:invert(1);
+  position: absolute;
+}
+
+.tile-title {
+  left: 10px;
+  bottom: 8px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1em;
+  position: absolute;
+}
+
+ax-pressure {
+  display: block;
+  margin: 0;
+}
+
+ax-reveal {
+  --reveal-color: white;
+  --reveal-border-width: 2px;
+}
+
+ax-acrylic {
+  --acrylic-tint-color: #023059;
+}
+
+ax-elevation {
+  --elevation-depth: 12;
+}
+
+.license {
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.8em;
+  position: fixed;
+  opacity: 0.3;
+  transition: opacity 300ms;
+}
+
+.license:hover {
+  opacity: 1;
+}

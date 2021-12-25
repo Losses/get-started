@@ -1,0 +1,23 @@
+{
+  "name": "start",
+  "packageManager": "yarn@3.1.1",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@ax-design/acrylic": "^0.0.1",
+    "@ax-design/elevation": "^0.0.1",
+    "@ax-design/pressure": "^0.0.1",
+    "@ax-design/reveal-highlight": "link:../reveal-highlight",
+    "@fontsource/ibm-plex-sans": "^4.5.1",
+    "@fontsource/ibm-plex-serif": "^4.5.1",
+    "lit-html": "^2.0.2"
+  }
+}
